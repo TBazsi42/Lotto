@@ -14,21 +14,18 @@ public class Dolgozat {
 	private String fileNeve;
 	private int parosokSzama;
 	private HashMap<Integer, Integer> szamHalmaz;
-	private List<Integer> kiNemHuzottSzamokSzama;
 	private int egyesekSzama;
 	private int kilencvenekSzama;
 	private Scanner sc;
 	private int[][] egyEvbenMindenSzambol;
 	private final static int NYEROSZAM_DB = 5;
-	private final static int MIN = 1;
-	private final static int MAX = 90;
+
 
 	public Dolgozat(String fileNeve) {
 		super();
 		this.fileNeve = fileNeve;
 		this.parosokSzama = 0;
 		this.szamHalmaz = setSzamHalmaz();
-		this.kiNemHuzottSzamokSzama = new ArrayList<>();
 		this.egyesekSzama = 0;
 		this.kilencvenekSzama = 0;
 		this.sc = new Scanner(System.in);
@@ -52,14 +49,6 @@ public class Dolgozat {
 		tablazatKirajzol();
 		
 
-	}
-
-	private int talalatokSzama(int[] tippek) {
-		int talalatok = 0;
-		for (int i = 0; i < 52; i++) {
-			
-		}
-		return talalatok;
 	}
 	
 	private void tablazatKirajzol() {
